@@ -276,3 +276,63 @@ p {
 .site-footer p {
   font-size: 14px;
 }
+
+.hero-badge {
+  text-align: center;
+  padding: 20px;
+}
+
+.badge-label,
+.badge-sub {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #888888;
+}
+
+.badge-title {
+  font-size: 56px;
+  color: #ffffff;
+  margin: 12px 0;
+  letter-spacing: 4px;
+}
+
+.category-tag {
+  display: inline-block;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #888888;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 15px;
+}
+
+.price {
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 16px;
+}
+
+.section-footer {
+  margin-top: 30px;
+}
+
+.text-block {
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.founder-card {
+  max-width: 720px;
+}
