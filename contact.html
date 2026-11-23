@@ -27,17 +27,68 @@
   <main>
     <section class="page-header">
       <h1>Contact Us</h1>
-      <p>Questions, bulk orders, or store inquiries.</p>
+      <p>Questions, product availability, or bulk orders—reach out and we will reply within one business day.</p>
     </section>
 
     <section class="contact-details">
       <h2>Store Information</h2>
-      <!-- Location, hours, email, and phone -->
+      <div class="card-grid">
+        <article class="card">
+          <span class="category-tag">Showroom</span>
+          <h3>Location</h3>
+          <p>Unit 204, Monochrome Studio Building</p>
+          <p>Legazpi Village, Makati City, Metro Manila</p>
+        </article>
+
+        <article class="card">
+          <span class="category-tag">Schedule</span>
+          <h3>Operational Hours</h3>
+          <p>Monday – Friday: 10:00 AM – 7:00 PM</p>
+          <p>Saturday: 11:00 AM – 6:00 PM</p>
+          <p>Sunday: Closed</p>
+        </article>
+
+        <article class="card">
+          <span class="category-tag">Direct Line</span>
+          <h3>Email &amp; Phone</h3>
+          <p>Email: <a href="mailto:hello@allblackstore.ph" class="contact-link">hello@allblackstore.ph</a></p>
+          <p>Phone: +63 917 482 1094</p>
+          <p>Instagram: @allblack.essentials</p>
+        </article>
+      </div>
     </section>
 
     <section class="contact-form-section">
       <h2>Send an Inquiry</h2>
-      <!-- Inquiry form-->
+      <form id="contact-form" class="contact-form" novalidate>
+        <div class="form-group">
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" name="full-name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="topic">Inquiry Topic</label>
+          <select id="topic" name="topic">
+            <option value="order">Product Order</option>
+            <option value="bulk">Bulk / Corporate Order</option>
+            <option value="product">Product Question</option>
+            <option value="other">General Inquiry</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us which items or details you need..." required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Send Message</button>
+        <p id="form-status" class="form-status"></p>
+      </form>
     </section>
   </main>
 
