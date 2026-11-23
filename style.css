@@ -1,0 +1,278 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: #f0f0f0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Header & Navigation */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #0a0a0a;
+  border-bottom: 1px solid #222222;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links a {
+  font-size: 15px;
+  color: #999999;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #ffffff;
+}
+
+.cta-btn {
+  padding: 10px 22px;
+  background-color: #ffffff;
+  color: #0a0a0a;
+  border: 1px solid #ffffff;
+  border-radius: 25px;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.cta-btn:hover,
+.cta-btn.active {
+  background-color: #0a0a0a;
+  color: #ffffff;
+}
+
+/* Main Content Layout */
+main {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+section {
+  padding: 60px 0;
+  border-bottom: 1px solid #222222;
+}
+
+h1,
+h2,
+h3 {
+  color: #ffffff;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #aaaaaa;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 80px 0;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-text h1 {
+  font-size: 64px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 17px;
+  margin-bottom: 30px;
+  max-width: 450px;
+}
+
+.primary-btn {
+  display: inline-block;
+  padding: 12px 26px;
+  border: 1px solid #ffffff;
+  border-radius: 25px;
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.primary-btn:hover {
+  background-color: #ffffff;
+  color: #0a0a0a;
+}
+
+.hero-visual {
+  flex: 1;
+  min-width: 300px;
+  height: 340px;
+  background-color: #141414;
+  border: 1px solid #262626;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-meta {
+  width: 320px;
+  margin-left: auto;
+  padding: 18px;
+  background-color: #141414;
+  border: 1px solid #262626;
+}
+
+.hero-meta p:first-child {
+  font-size: 13px;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 2px;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #262626;
+}
+
+.hero-meta p:last-child {
+  font-size: 14px;
+}
+
+/* Subpage Headers */
+.page-header h1 {
+  font-size: 46px;
+  margin-bottom: 10px;
+}
+
+.page-header p {
+  font-size: 17px;
+  max-width: 600px;
+}
+
+/* Filter Buttons */
+.product-controls {
+  padding: 30px 0 0;
+  border-bottom: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter-btn {
+  padding: 8px 18px;
+  background-color: #0a0a0a;
+  color: #aaaaaa;
+  border: 1px solid #333333;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: #ffffff;
+  color: #0a0a0a;
+  border-color: #ffffff;
+}
+
+/* Cards & Grids */
+.card-grid,
+.gallery-grid,
+.reviews-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  flex: 1 1 280px;
+  background-color: #141414;
+  border: 1px solid #262626;
+  padding: 20px;
+}
+
+.card:hover {
+  border-color: #555555;
+}
+
+/* Contact Form */
+.contact-form {
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px;
+  background-color: #141414;
+  color: #ffffff;
+  border: 1px solid #333333;
+  font-family: inherit;
+  font-size: 15px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #ffffff;
+}
+
+/* Footer */
+.site-footer {
+  padding: 35px 25px;
+  text-align: center;
+}
+
+.site-footer p {
+  font-size: 14px;
+}
